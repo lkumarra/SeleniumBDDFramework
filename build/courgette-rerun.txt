@@ -1,0 +1,17 @@
+file:src/test/resources/features/HomePage.feature:19
+file:src/test/resources/features/HomePage.feature:20
+file:src/test/resources/features/HomePage.feature:21
+file:src/test/resources/features/HomePage.feature:22
+file:src/test/resources/features/HomePage.feature:23
+file:src/test/resources/features/HomePage.feature:24
+file:src/test/resources/features/HomePage.feature:25
+file:src/test/resources/features/HomePage.feature:26
+file:src/test/resources/features/HomePage.feature:27
+file:src/test/resources/features/HomePage.feature:28
+file:src/test/resources/features/HomePage.feature:29
+file:src/test/resources/features/HomePage.feature:30
+file:src/test/resources/features/HomePage.feature:31
+file:src/test/resources/features/HomePage.feature:32
+file:src/test/resources/features/HomePage.feature:33
+file:src/test/resources/features/HomePage.feature:8
+file:src/test/resources/features/NewCustomerPage.feature:9

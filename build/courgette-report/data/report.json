@@ -1,0 +1,180 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "line" : 4,
+    "name" : "",
+    "description" : "",
+    "type" : "background",
+    "keyword" : "Background",
+    "steps" : [ {
+      "result" : {
+        "duration" : 45232000000,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "As a user i navigate to url \"http://www.demo.guru99.com/V4/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.demo.guru99.com/V4/\"",
+          "offset" : 28
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.as_a_user_i_navigate_to_url(java.lang.String)"
+      },
+      "keyword" : "Given "
+    } ]
+  }, {
+    "start_timestamp" : "2021-01-15T16:16:51.301Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 3810000000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "demp.guru99.com.steps.Hooks.setUp()"
+      }
+    } ],
+    "line" : 7,
+    "name" : "Verify userId and Password label",
+    "description" : "",
+    "id" : "guru99-bank-login-page-feature;verify-userid-and-password-label",
+    "after" : [ {
+      "result" : {
+        "duration" : 635000000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "demp.guru99.com.steps.Hooks.tearDown()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 92000000,
+        "status" : "passed"
+      },
+      "line" : 8,
+      "name" : "UserId label is \"UserID\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"UserID\"",
+          "offset" : 16
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.userid_label_is(java.lang.String)"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 51000000,
+        "status" : "passed"
+      },
+      "line" : 9,
+      "name" : "Password Label is \"Password\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"Password\"",
+          "offset" : 18
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.password_Label_is(java.lang.String)"
+      },
+      "keyword" : "And "
+    } ]
+  } ],
+  "name" : "Guru99 Bank login page feature",
+  "description" : "  As a user i wants to verify the login page feature.",
+  "id" : "guru99-bank-login-page-feature",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/features/LoginPage.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "line" : 4,
+    "name" : "",
+    "description" : "",
+    "type" : "background",
+    "keyword" : "Background",
+    "steps" : [ {
+      "result" : {
+        "duration" : 5662000000,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "As a user i navigate to url \"http://www.demo.guru99.com/V4/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.demo.guru99.com/V4/\"",
+          "offset" : 28
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.as_a_user_i_navigate_to_url(java.lang.String)"
+      },
+      "keyword" : "Given "
+    } ]
+  }, {
+    "start_timestamp" : "2021-01-15T16:16:38.874Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 3951000000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "demp.guru99.com.steps.Hooks.setUp()"
+      }
+    } ],
+    "line" : 11,
+    "name" : "Verify alert text",
+    "description" : "",
+    "id" : "guru99-bank-login-page-feature;verify-alert-text",
+    "after" : [ {
+      "result" : {
+        "duration" : 650000000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "demp.guru99.com.steps.Hooks.tearDown()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 978000000,
+        "status" : "passed"
+      },
+      "line" : 12,
+      "name" : "I enter userId as \"\" and password \"\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"\"",
+          "offset" : 18
+        }, {
+          "val" : "\"\"",
+          "offset" : 34
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.i_enter_userId_as_and_password(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 31000000,
+        "status" : "passed"
+      },
+      "line" : 13,
+      "name" : "I get a alert with text \"User or Password is not valid\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"User or Password is not valid\"",
+          "offset" : 24
+        } ],
+        "location" : "demp.guru99.com.steps.LoginPageSteps.i_get_a_alert_with_text(java.lang.String)"
+      },
+      "keyword" : "Then "
+    } ]
+  } ],
+  "name" : "Guru99 Bank login page feature",
+  "description" : "  As a user i wants to verify the login page feature.",
+  "id" : "guru99-bank-login-page-feature",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/features/LoginPage.feature",
+  "tags" : [ ]
+} ]
