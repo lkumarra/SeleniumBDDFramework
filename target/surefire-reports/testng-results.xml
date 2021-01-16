@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="67484" started-at="2021-01-16T17:51:17 IST" finished-at="2021-01-16T17:52:25 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="67484" started-at="2021-01-16T17:51:17 IST" finished-at="2021-01-16T17:52:25 IST">
+      <class name="demo.guru99.com.runner.RunCukes">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:demo.guru99.com.runner.RunCukes@2d928643]" name="initialize" is-config="true" duration-ms="146" started-at="2021-01-16T17:51:17 IST" finished-at="2021-01-16T17:51:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="parallelRun()[pri:0, instance:demo.guru99.com.runner.RunCukes@2d928643]" name="parallelRun" duration-ms="67304" started-at="2021-01-16T17:51:17 IST" finished-at="2021-01-16T17:52:25 IST">
+          <exception class="courgette.runtime.CourgetteTestFailureException">
+            <message>
+              <![CDATA[There were failing tests. Refer to the Courgette html report for more details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[courgette.runtime.CourgetteTestFailureException: There were failing tests. Refer to the Courgette html report for more details.
+]]>
+            </full-stacktrace>
+          </exception> <!-- courgette.runtime.CourgetteTestFailureException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelRun -->
+      </class> <!-- demo.guru99.com.runner.RunCukes -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

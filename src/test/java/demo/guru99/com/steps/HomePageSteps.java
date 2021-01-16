@@ -1,119 +1,49 @@
 package demo.guru99.com.steps;
 
+import java.util.List;
+
+import org.testng.Assert;
+
+import demo.guru99.com.pageobjects.BasePage;
+import demo.guru99.com.pageobjects.HomePage;
+import demo.guru99.com.pageobjects.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class HomePageSteps {
-
+	
+	public LoginPage loginPage = new LoginPage();
+	public HomePage homePage;
+	
+	
 	@Given("I navigate to url {string}")
-	public void i_navigate_to_url(String string) {
-	    
+	public void i_navigate_to_url(String url) {
+	    BasePage.getUrl(url);
 	}
 
 	@When("I enter userID as {string} and password as {string}")
-	public void i_enter_userID_as_and_password_as(String string, String string2) {
-
-	}
-
-	@Then("I successfully login.")
-	public void i_successfully_login() {
-
-	}
-
-	@When("I am home page")
-	public void i_am_home_page() {
-
+	public void i_enter_userID_as_and_password_as(String userId, String password) {
+		homePage = loginPage.login(userId, password);
 	}
 
 	@Then("A welcome message {string} should present.")
-	public void a_welcome_message_should_present(String string) {
-
+	public void a_welcome_message_should_present(String welcomeMessage) {
+		Assert.assertEquals(homePage.getWelcomeMessage(), welcomeMessage);
 	}
 
 	@Then("user userID with message {string} should present.")
-	public void user_userID_with_message_should_present(String string) {
-
+	public void user_userID_with_message_should_present(String userIdMessage) {
+		Assert.assertEquals(homePage.getManageIdMessage(), userIdMessage);
 	}
 
-	@When("I am on home page.")
-	public void i_am_on_home_page() {
-
+	@Then("I get all the Links")
+	public void i_get_all_the_Links(List<String> list) {
+	    List<String> actualLinks = homePage.getLinkTexts();
+	    for(int i =0; i<actualLinks.size(); i++) {
+	    	Assert.assertEquals(actualLinks.get(i), list.get(i+1));
+	    }
 	}
 
-	@Then("All links Manager should be present on homepage.")
-	public void all_links_Manager_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links New Customer should be present on homepage.")
-	public void all_links_New_Customer_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Edit Customer should be present on homepage.")
-	public void all_links_Edit_Customer_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Delete Customer should be present on homepage.")
-	public void all_links_Delete_Customer_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links New Account should be present on homepage.")
-	public void all_links_New_Account_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Edit Account should be present on homepage.")
-	public void all_links_Edit_Account_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Delete Account should be present on homepage.")
-	public void all_links_Delete_Account_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Deposit should be present on homepage.")
-	public void all_links_Deposit_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Withdrawal should be present on homepage.")
-	public void all_links_Withdrawal_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Fund Transfer should be present on homepage.")
-	public void all_links_Fund_Transfer_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Change Password should be present on homepage.")
-	public void all_links_Change_Password_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Balance Enquiry should be present on homepage.")
-	public void all_links_Balance_Enquiry_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Mini Statement should be present on homepage.")
-	public void all_links_Mini_Statement_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Customised Statement should be present on homepage.")
-	public void all_links_Customised_Statement_should_be_present_on_homepage() {
-
-	}
-
-	@Then("All links Log out should be present on homepage.")
-	public void all_links_Log_out_should_be_present_on_homepage() {
-
-	}
 
 }

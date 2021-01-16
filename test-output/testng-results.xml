@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="63870" started-at="2021-01-15T21:46:37 IST" finished-at="2021-01-15T21:47:41 IST">
+  <suite name="Suite" duration-ms="97845" started-at="2021-01-16T17:19:53 IST" finished-at="2021-01-16T17:21:31 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="63870" started-at="2021-01-15T21:46:37 IST" finished-at="2021-01-15T21:47:41 IST">
+    <test name="Test" duration-ms="97845" started-at="2021-01-16T17:19:53 IST" finished-at="2021-01-16T17:21:31 IST">
       <class name="demo.guru99.com.runner.RunCukes">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:demo.guru99.com.runner.RunCukes@7a9273a8]" name="initialize" is-config="true" duration-ms="145" started-at="2021-01-15T21:46:37 IST" finished-at="2021-01-15T21:46:38 IST">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:demo.guru99.com.runner.RunCukes@7a9273a8]" name="initialize" is-config="true" duration-ms="147" started-at="2021-01-16T17:19:53 IST" finished-at="2021-01-16T17:19:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="parallelRun()[pri:0, instance:demo.guru99.com.runner.RunCukes@7a9273a8]" name="parallelRun" duration-ms="63694" started-at="2021-01-15T21:46:38 IST" finished-at="2021-01-15T21:47:41 IST">
+        <test-method status="PASS" signature="parallelRun()[pri:0, instance:demo.guru99.com.runner.RunCukes@7a9273a8]" name="parallelRun" duration-ms="97667" started-at="2021-01-16T17:19:53 IST" finished-at="2021-01-16T17:21:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- parallelRun -->

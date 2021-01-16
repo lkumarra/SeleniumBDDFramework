@@ -2,11 +2,14 @@ package demo.guru99.com.pageobjects;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
@@ -56,6 +59,17 @@ public class BasePage {
 	public static void tearDown() {
 		if(driver != null) {
 			driver.quit();
+		}
+	}
+	
+	/**
+	 * 
+	 * @param scenario
+	 */
+	public static void takeScreenshot(Scenario scenario) {
+		if (scenario.isFailed()) {
+			byte[] screenshotByte = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			scenario.embed(screenshotByte, "image/png", scenario.getName());
 		}
 	}
 	

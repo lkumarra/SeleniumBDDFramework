@@ -1,0 +1,9 @@
+demo\guru99\com\pageobjects\NewCustomerPage.class
+demo\guru99\com\pageobjects\LoginPage.class
+demo\guru99\com\constants\Configurations.class
+demo\guru99\com\webelements\NewCustomerPageLocators.class
+demo\guru99\com\webelements\HomePageLocators.class
+demo\guru99\com\webelements\LoginPageLocators.class
+demo\guru99\com\pageobjects\HomePage.class
+demo\guru99\com\utilities\Utilities.class
+demo\guru99\com\pageobjects\BasePage.class

@@ -5,7 +5,7 @@ Feature: Guru99 Bank login page feature
     Given As a user i navigate to url "http://www.demo.guru99.com/V4/"
 
   Scenario: Verify userId and Password label
-    Then UserId label is "UserID"
+    Then UserId label is "UserId"
     And Password Label is "Password"
 
   Scenario: Verify alert text
